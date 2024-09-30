@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Ginger";
+    src: url(/Ginger.otf);
+  }
+  body {
+    @apply max-w-[100vw] h-full font-txt overflow-x-hidden text-secondary transition-colors duration-1000;
+  }
+}
+
+.light {
+  --primary: 255, 255, 255;
+  --secondary: 0, 0, 0;
+}
+
+.dark {
+  --primary: 0, 0, 0;
+  --secondary: 255, 255, 255;
+}
